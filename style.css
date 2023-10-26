@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+    display: block;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("covid-bg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+    opacity: 0.8;
+
+}
+
+.card{
+    background-color:rgb(191, 204, 181, 0.5);
+	box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+
+.btn{
+	background-color: #7D7C7C;
+}
+
+.fas{
+	color: #7D7C7C;
+}
+
+.card-body{
+	background-color: rgb(241, 239, 239);
+	transition: all 0.5s;
+	border: 1px solid white;
+	box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+	backdrop-filter: blur(6px);
+}
+
+.card-body:hover{
+	border: 1px solid black;
+	transform: scale(1.05);
+}
+
+.card-body:active {
+	transform: scale(0.95) rotateZ(1.7deg);
+  }

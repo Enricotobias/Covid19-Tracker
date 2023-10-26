@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data COVID-19 Realtime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="container">
+            <div class="card container">
+                <h1 class="text-body-emphasis text-center">COVID-19 TRACKER</h1>
+                <div class="container text-center my-3">
+                    <div class="form-group">
+                        <label for="countrySearch" class="form-label">Masukkan Nama Negara:</label>
+                        <input class="form-control" list="datalistOptions" id="countrySearch" placeholder="Ketik untuk mencari...">
+                        <datalist id="datalistOptions"></datalist>
+                    </div>
+                    <div class="row-gap-md-2 my-3 justify-content-center">
+                        <button id="searchButton" class="btn btn-primary btn-dark">Cari</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Kasus Aktif</h5>
+                                <i class="fas fa-hospital-symbol fa-3x"></i>
+                                <h4 class="card-text" id="activeCases"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Kasus Baru</h5>
+                                <i class="fas fa-virus fa-3x"></i>
+                                <h4 class="card-text" id="newCases"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Kesembuhan</h5>
+                                <i class="fas fa-medkit fa-3x"></i>
+                                <h4 class="card-text" id="recoveredCases"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Kasus</h5>
+                                <i class="fas fa-chart-bar fa-3x"></i>
+                                <h4 class="card-text" id="totalCases"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Kematian</h5>
+                                <i class="fas fa-skull-crossbones fa-3x"></i>
+                                <h4 class="card-text" id="totalDeaths"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Kasus Global</h5>
+                                <i class="fas fa-globe-americas fa-3x "></i>
+                                <h4 class="card-text" id="totalCasesGlobal"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
